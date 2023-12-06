@@ -1,0 +1,23 @@
+
+server:
+  port: 8083
+
+logging:
+  level:
+    root: INFO
+    org.springframework.cloud.gateway: TRACE
+    org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator: INFO
+    reactor.netty: TRACE
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: task-service-get-all-post
+          uri: http://${TASK_SERVICE_BASEURL:localhost:8082}
+          predicates:
+            - Path=/task
+            - Method=GET
+            - Method=POST
+          filters:
+            - SetPath=/tasks

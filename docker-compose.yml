@@ -48,7 +48,7 @@ services:
    MYSQL_DB_USERNAME: root
    MYSQL_DB_PASSWORD: abc123
    MYSQL_DB_HOST: mysql-task
-   MYSQL_DB_PORT: 3307
+   MYSQL_DB_PORT: 3306
 
  user-service:
   depends_on:
@@ -67,6 +67,17 @@ services:
    MYSQL_DB_PASSWORD: abc123
    MYSQL_DB_HOST: mysql-user
    MYSQL_DB_PORT: 3306
+
+ api-gateway:
+   depends_on:
+     - task-service
+   image: mikkyg/ede-api-gateway
+   ports:
+     - 8083:8083
+   links:
+     - task-service
+   environment:
+     TASK_SERVICE_BASEURL: task-service:8082
 
 volumes:
  mongodb_notification_data:
