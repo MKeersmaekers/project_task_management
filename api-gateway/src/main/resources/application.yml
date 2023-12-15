@@ -27,3 +27,52 @@ spring:
             - Method=POST
           filters:
             - SetPath=/tasks
+        - id: task-service-get-by-id
+          uri: http://${TASK_SERVICE_BASEURL:localhost:8082}
+          predicates:
+            - Path=/tasks/{id}
+            - Method=GET
+          filters:
+            - SetPath=/tasks/{id}
+        - id: task-service-put
+          uri: http://${TASK_SERVICE_BASEURL:localhost:8082}
+          predicates:
+            - Path=/tasks/{id}
+            - Method=PUT
+          filters:
+            - SetPath=/tasks/{id}
+        - id: task-service-delete
+          uri: http://${TASK_SERVICE_BASEURL:localhost:8082}
+          predicates:
+            - Path=/tasks/{id}
+            - Method=DELETE
+          filters:
+            - SetPath=/tasks/{id}
+        - id: user-service-get
+          uri: http://${USER_SERVICE_BASEURL:localhost:8081}
+          predicates:
+            - Path=/users
+            - Method=GET
+          filters:
+            - SetPath=/users
+        - id: user-service-get-by-id
+          uri: http://${USER_SERVICE_BASEURL:localhost:8081}
+          predicates:
+            - Path=/users/{userId}
+            - Method=GET
+          filters:
+            - SetPath=/users/{userId}
+        - id: notification-service-get
+          uri: http://${NOTIFICATION_SERVICE_BASEURL:localhost:8080}
+          predicates:
+            - Path=/notifications
+            - Method=GET
+          filters:
+            - SetPath=/notifications
+        - id: notification-service-post
+          uri: http://${NOTIFICATION_SERVICE_BASEURL:localhost:8080}
+          predicates:
+            - Path=/notifications
+            - Method=POST
+          filters:
+            - SetPath=/notifications

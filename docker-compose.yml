@@ -71,13 +71,19 @@ services:
  api-gateway:
    depends_on:
      - task-service
+     - user-service
+     - notification-service
    image: mikkyg/ede-api-gateway:latest
    ports:
      - 8083:8083
    links:
      - task-service
+     - user-service
+     - notification-service
    environment:
      TASK_SERVICE_BASEURL: task-service:8082
+     USER_SERVICE_BASEURL: user-service:8081
+     NOTIFICATION_SERVICE_BASEURL: notification-service:8080
 
 volumes:
  mongodb_notification_data:
