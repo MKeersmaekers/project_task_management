@@ -71,7 +71,7 @@ services:
  api-gateway:
    depends_on:
      - task-service
-   image: mikkyg/ede-api-gateway
+   image: mikkyg/ede-api-gateway:latest
    ports:
      - 8083:8083
    links:

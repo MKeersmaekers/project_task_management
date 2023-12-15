@@ -13,11 +13,17 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: task-service-get-all-post
+        - id: task-service-get
           uri: http://${TASK_SERVICE_BASEURL:localhost:8082}
           predicates:
-            - Path=/task
+            - Path=/tasks
             - Method=GET
+          filters:
+            - SetPath=/tasks
+        - id: task-service-post
+          uri: http://${TASK_SERVICE_BASEURL:localhost:8082}
+          predicates:
+            - Path=/tasks
             - Method=POST
           filters:
             - SetPath=/tasks
