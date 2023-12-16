@@ -23,26 +23,6 @@ public class TaskService {
         this.webClient = webClient;
         this.taskRepository = taskRepository;
     }
-
-   @PostConstruct
-    public void loadData() {
-       if(taskRepository.count() > 0){
-           Task task = new Task();
-           task.setSkuCode("tube6in");
-           task.setName("PHP");
-           task.setDescription("work on project php");
-           task.setCompleted(false);
-
-           Task task1 = new Task();
-           task.setSkuCode("dorn7kf");
-           task.setName("angular");
-           task.setDescription("work on project angular");
-           task.setCompleted(true);
-
-           taskRepository.save(task);
-           taskRepository.save(task1);
-       }
-   }
     public TaskDTO createTask(Task task) {
         Task savedTask = taskRepository.save(task);
         return convertToDTO(savedTask);
