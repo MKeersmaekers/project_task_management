@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-18T11:35:30.593Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0" etag="VuxbQTmdmEygVsDWA3EG" version="22.1.11" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-18T11:41:16.319Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0" etag="U49boVxvJwGBSkI_0tyC" version="22.1.11" type="github">
   <diagram name="Page-1" id="w73oYDgBXrICp-ajVwqz">
     <mxGraphModel dx="1434" dy="820" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#000000" math="0" shadow="0">
       <root>
@@ -107,7 +107,7 @@
         <mxCell id="vIzcnfgWgh70xaCTr_LJ-30" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
           <mxGeometry x="638" y="711.25" width="48" height="60.5" as="geometry" />
         </mxCell>
-        <mxCell id="vIzcnfgWgh70xaCTr_LJ-31" value="&lt;font color=&quot;#ffffff&quot;&gt;ports: 3306:3306&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="vIzcnfgWgh70xaCTr_LJ-31" value="&lt;font color=&quot;#ffffff&quot;&gt;ports: 27017:27017&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="510" y="631" width="112.5" height="31.5" as="geometry" />
         </mxCell>
         <mxCell id="vIzcnfgWgh70xaCTr_LJ-32" value="" style="shape=or;whiteSpace=wrap;html=1;direction=north;fillColor=#666666;" vertex="1" parent="1">
@@ -171,6 +171,72 @@
             <Array as="points">
               <mxPoint x="669" y="432" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vIzcnfgWgh70xaCTr_LJ-49" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ffffff&quot;&gt;mysql_user_data&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="395.5" y="785" width="60" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="vIzcnfgWgh70xaCTr_LJ-50" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="vIzcnfgWgh70xaCTr_LJ-49" target="vIzcnfgWgh70xaCTr_LJ-23">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="399" y="777" as="sourcePoint" />
+            <mxPoint x="449" y="727" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vIzcnfgWgh70xaCTr_LJ-51" value="&lt;div&gt;/var/lib/mysql&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#000000;fontColor=#FFFFFF;" vertex="1" connectable="0" parent="vIzcnfgWgh70xaCTr_LJ-50">
+          <mxGeometry x="-0.1304" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vIzcnfgWgh70xaCTr_LJ-52" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ffffff&quot;&gt;mysql_task_data&lt;/font&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="197" y="867" width="60" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="vIzcnfgWgh70xaCTr_LJ-53" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=#FFFFFF;" edge="1" source="vIzcnfgWgh70xaCTr_LJ-52" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200.5" y="859" as="sourcePoint" />
+            <mxPoint x="227.5" y="798" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vIzcnfgWgh70xaCTr_LJ-54" value="&lt;div&gt;/var/lib/mysql&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#000000;fontColor=#FFFFFF;" vertex="1" connectable="0" parent="vIzcnfgWgh70xaCTr_LJ-53">
+          <mxGeometry x="-0.1304" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vIzcnfgWgh70xaCTr_LJ-55" value="&lt;div&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ffffff&quot;&gt;mongodb_notification_data&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="632" y="864" width="60" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="vIzcnfgWgh70xaCTr_LJ-56" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=#FFFFFF;" edge="1" source="vIzcnfgWgh70xaCTr_LJ-55" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="635.5" y="856" as="sourcePoint" />
+            <mxPoint x="662.5" y="795" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vIzcnfgWgh70xaCTr_LJ-57" value="/data/db" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#000000;fontColor=#FFFFFF;" vertex="1" connectable="0" parent="vIzcnfgWgh70xaCTr_LJ-56">
+          <mxGeometry x="-0.1304" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vIzcnfgWgh70xaCTr_LJ-58" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="vIzcnfgWgh70xaCTr_LJ-27">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="667.5" y="652.5" as="sourcePoint" />
+            <mxPoint x="668.5" y="554.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vIzcnfgWgh70xaCTr_LJ-59" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="vIzcnfgWgh70xaCTr_LJ-32" target="vIzcnfgWgh70xaCTr_LJ-44">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="219.25" y="632.25" as="sourcePoint" />
+            <mxPoint x="225.75" y="557.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vIzcnfgWgh70xaCTr_LJ-60" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#FFFFFF;exitX=0.791;exitY=1.085;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.7;entryY=0.9;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="vIzcnfgWgh70xaCTr_LJ-10" target="vIzcnfgWgh70xaCTr_LJ-38">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="408" y="454" as="sourcePoint" />
+            <mxPoint x="458" y="404" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vIzcnfgWgh70xaCTr_LJ-61" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#FFFFFF;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.7;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="vIzcnfgWgh70xaCTr_LJ-10" target="vIzcnfgWgh70xaCTr_LJ-43">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="599" y="308" as="sourcePoint" />
+            <mxPoint x="711" y="470" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
