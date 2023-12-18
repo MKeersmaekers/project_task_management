@@ -60,7 +60,12 @@ Aantoonbare werking van alle endpoints
 
 /users
 
-![image](https://github.com/MKeersmaekers/project_task_management/assets/91118306/0a6ff232-0fd1-43fe-9d38-bbaefa68ce87)
+![image](https://github.com/MKeersmaekers/project_task_management/assets/91118306/4643f9e1-d85c-4a66-8d4a-0c458146ae19)
+
+![image](https://github.com/MKeersmaekers/project_task_management/assets/91118306/740c61e1-3ccf-4dfc-990d-398ec7ae9b6a)
+
+![image](https://github.com/MKeersmaekers/project_task_management/assets/91118306/ee417226-fe00-46f3-9d57-16d0091aa501)
+
 
 /notifications
 
